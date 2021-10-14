@@ -4,11 +4,15 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
+import { QuestionsModule } from './questions/questions.module';
+import { ResultsModule } from './results/results.module';
 
 
 @Module({
   imports: [
     UsersModule,
+    QuestionsModule,
+    ResultsModule,
     SequelizeModule.forRoot({
       dialect: 'mysql',
       host: 'localhost',
