@@ -13,7 +13,7 @@ import { ResultsService } from './results.service';
 import { Result } from './result.model';
 
 
-@Controller('results')
+@Controller('api/results')
 export class ResultsController {
   constructor(private readonly resultsService: ResultsService) {}
 

@@ -14,7 +14,7 @@ import { QuestionsService } from './questions.service';
 import { Question } from './question.model';
 
 
-@Controller('questions')
+@Controller('api/questions')
 export class QuestionsController {
   constructor(private readonly questionsService: QuestionsService) {}
 
