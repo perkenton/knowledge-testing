@@ -22,6 +22,7 @@ import { ResultsModule } from './results/results.module';
       database: 'knowledgeTesting',
       autoLoadModels: true,
       synchronize: true,
+      // sync: { force: true } // TODO
     }),
   ],
   controllers: [AppController],
